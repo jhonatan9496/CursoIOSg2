@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8EC0B2DB-4AFD-43CC-8C75-E71CA585D058</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NotasApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5B32602BA11F1E9CAC9D2625CB3D98318087164C</key>
+		<string>https://github.com/jhonatan9496/CursoIOSg2.git</string>
+		<key>CE6BFCCC29C00F3D135CA31BDE1417B45637D1F1</key>
+		<string>https://github.com/jhonatan9496/CursoIOSGrupo2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Proyectos Grupo 1/NotasApp/NotasApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5B32602BA11F1E9CAC9D2625CB3D98318087164C</key>
+		<string>../../../../Proyectos%20Grupo%202</string>
+		<key>CE6BFCCC29C00F3D135CA31BDE1417B45637D1F1</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jhonatan9496/CursoIOSGrupo2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE6BFCCC29C00F3D135CA31BDE1417B45637D1F1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE6BFCCC29C00F3D135CA31BDE1417B45637D1F1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Curso%20iOS%20Avanzado</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5B32602BA11F1E9CAC9D2625CB3D98318087164C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Proyectos%20Grupo%202</string>
+		</dict>
+	</array>
+</dict>
+</plist>

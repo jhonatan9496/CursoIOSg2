@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fQD-QL-xxg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Listar Tareas View Controller-->
+        <scene sceneID="uOo-mr-QMn">
+            <objects>
+                <viewController storyboardIdentifier="lista" id="fQD-QL-xxg" customClass="ListarTareasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lx2-5Z-84J"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gjk-o0-8Dg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gri-tU-KJX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rv5-pI-Uo3">
+                                <rect key="frame" x="0.0" y="72" width="320" height="516"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cadaTarea" rowHeight="73" id="fQ4-qY-blf" customClass="CadaTareaTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fQ4-qY-blf" id="q5E-Mn-pmL">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo Nota" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g7-2U-Skp">
+                                                    <rect key="frame" x="25" y="8" width="222" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion Nota" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gca-qc-h51">
+                                                    <rect key="frame" x="25" y="30" width="240" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFS-zV-dFH">
+                                                    <rect key="frame" x="254" y="13" width="58" height="48"/>
+                                                    <state key="normal" image="eliminar.png"/>
+                                                    <connections>
+                                                        <action selector="eliminarTarea:" destination="fQ4-qY-blf" eventType="touchUpInside" id="09A-hO-ry3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descripcion" destination="gca-qc-h51" id="tYd-98-JOa"/>
+                                            <outlet property="estadoBoton" destination="FFS-zV-dFH" id="AzS-DL-v3t"/>
+                                            <outlet property="tituloTarea" destination="7g7-2U-Skp" id="cpy-b4-kQV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fQD-QL-xxg" id="P7T-81-uTS"/>
+                                    <outlet property="delegate" destination="fQD-QL-xxg" id="EN4-aP-u9g"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kyb-mL-3ko">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Lista Tareas" id="xGK-eM-jG0">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OTH-iM-o3w">
+                                            <connections>
+                                                <segue destination="yaE-Fx-nVA" kind="modal" id="cLP-Sf-iKw"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="Rv5-pI-Uo3" id="6Kd-yU-1KS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nf3-qD-Dpp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="360"/>
+        </scene>
+        <!--Agregar Tareas View Controller-->
+        <scene sceneID="C8j-Zs-KWc">
+            <objects>
+                <viewController id="yaE-Fx-nVA" customClass="AgregarTareasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OsF-1x-TOP"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ft-Z5-4f7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ug8-Ec-TnY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqR-ze-ZGP">
+                                <rect key="frame" x="0.0" y="32" width="320" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvN-fF-sLH">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="10000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo Tarea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rl-1x-1hL">
+                                                <rect key="frame" x="38" y="106" width="89" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion Tarea" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snX-WI-OTN">
+                                                <rect key="frame" x="25" y="145" width="102" height="64"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFe-bQ-eRm">
+                                                <rect key="frame" x="141" y="97" width="159" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsn-T8-S8U">
+                                                <rect key="frame" x="135" y="145" width="159" height="139"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eim-fL-Twb">
+                                                <rect key="frame" x="84" y="309" width="134" height="46"/>
+                                                <state key="normal" title="Agregar Tarea">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="inserta:" destination="yaE-Fx-nVA" eventType="touchUpInside" id="Bc5-b7-3sI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="3Rn-ks-dzI"/>
+                                            <constraint firstAttribute="height" constant="10000" id="OyA-Qt-2rz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uvN-fF-sLH" secondAttribute="trailing" id="OyQ-c1-RVE"/>
+                                    <constraint firstItem="uvN-fF-sLH" firstAttribute="leading" secondItem="eqR-ze-ZGP" secondAttribute="leading" id="imk-dh-4jw"/>
+                                    <constraint firstItem="uvN-fF-sLH" firstAttribute="top" secondItem="eqR-ze-ZGP" secondAttribute="top" id="kuA-1d-SWG"/>
+                                    <constraint firstAttribute="bottom" secondItem="uvN-fF-sLH" secondAttribute="bottom" id="shY-MR-gUS"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRQ-tJ-XjF">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Agregar Tarea" id="lyp-1W-BjZ">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="cancel" id="x6E-OB-mth">
+                                            <connections>
+                                                <segue destination="fQD-QL-xxg" kind="modal" id="Yon-rs-p9v"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Ft-Z5-4f7" firstAttribute="top" secondItem="eqR-ze-ZGP" secondAttribute="bottom" constant="32" id="6Wd-UR-79H"/>
+                            <constraint firstItem="eqR-ze-ZGP" firstAttribute="top" secondItem="OsF-1x-TOP" secondAttribute="bottom" constant="12" id="Q7b-xd-1rD"/>
+                            <constraint firstItem="eqR-ze-ZGP" firstAttribute="leading" secondItem="ug8-Ec-TnY" secondAttribute="leadingMargin" constant="-16" id="QHh-9h-4Lq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eqR-ze-ZGP" secondAttribute="trailing" constant="-16" id="zIN-7W-mYK"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="descripcionTarea" destination="gsn-T8-S8U" id="XWe-Wa-fSh"/>
+                        <outlet property="estiloBoton" destination="eim-fL-Twb" id="uk5-OI-KTm"/>
+                        <outlet property="tituloTarea" destination="GFe-bQ-eRm" id="KU8-dW-s6r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jf6-Cu-lBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eliminar.png" width="48" height="48"/>
+    </resources>
+</document>

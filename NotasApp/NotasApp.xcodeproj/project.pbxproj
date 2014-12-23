@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A38B26D91A424E9500592ED5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A38B26D81A424E9500592ED5 /* main.m */; };
+		A38B26DC1A424E9600592ED5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A38B26DB1A424E9600592ED5 /* AppDelegate.m */; };
+		A38B26DF1A424E9600592ED5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38B26DE1A424E9600592ED5 /* ViewController.m */; };
+		A38B26E21A424E9600592ED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38B26E01A424E9600592ED5 /* Main.storyboard */; };
+		A38B26E41A424E9600592ED5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38B26E31A424E9600592ED5 /* Images.xcassets */; };
+		A38B26E71A424E9600592ED5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38B26E51A424E9600592ED5 /* LaunchScreen.xib */; };
+		A38B26F31A424E9600592ED5 /* NotasAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A38B26F21A424E9600592ED5 /* NotasAppTests.m */; };
+		A38B26FD1A424EE800592ED5 /* notas.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A38B26FC1A424EE800592ED5 /* notas.sqlite */; };
+		A38B27011A425F1900592ED5 /* ListarTareasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38B27001A425F1900592ED5 /* ListarTareasViewController.m */; };
+		A38B27051A425F3300592ED5 /* AgregarTareasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38B27041A425F3300592ED5 /* AgregarTareasViewController.m */; };
+		A38B27091A425F6F00592ED5 /* Tarea.m in Sources */ = {isa = PBXBuildFile; fileRef = A38B27081A425F6F00592ED5 /* Tarea.m */; };
+		A38B270D1A4261E600592ED5 /* CadaTareaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A38B270C1A4261E600592ED5 /* CadaTareaTableViewCell.m */; };
+		A38B270F1A426EB200592ED5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A38B270E1A426EB100592ED5 /* libsqlite3.dylib */; };
+		A38B27571A43AA7500592ED5 /* eliminar.png in Resources */ = {isa = PBXBuildFile; fileRef = A38B27561A43AA7500592ED5 /* eliminar.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A38B26ED1A424E9600592ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A38B26CB1A424E9500592ED5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A38B26D21A424E9500592ED5;
+			remoteInfo = NotasApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A38B26D31A424E9500592ED5 /* NotasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38B26D71A424E9500592ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A38B26D81A424E9500592ED5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A38B26DA1A424E9500592ED5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A38B26DB1A424E9600592ED5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A38B26DD1A424E9600592ED5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A38B26DE1A424E9600592ED5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A38B26E11A424E9600592ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A38B26E31A424E9600592ED5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A38B26E61A424E9600592ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A38B26EC1A424E9600592ED5 /* NotasAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotasAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38B26F11A424E9600592ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A38B26F21A424E9600592ED5 /* NotasAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotasAppTests.m; sourceTree = "<group>"; };
+		A38B26FC1A424EE800592ED5 /* notas.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = notas.sqlite; sourceTree = "<group>"; };
+		A38B26FF1A425F1900592ED5 /* ListarTareasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListarTareasViewController.h; sourceTree = "<group>"; };
+		A38B27001A425F1900592ED5 /* ListarTareasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListarTareasViewController.m; sourceTree = "<group>"; };
+		A38B27031A425F3300592ED5 /* AgregarTareasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarTareasViewController.h; sourceTree = "<group>"; };
+		A38B27041A425F3300592ED5 /* AgregarTareasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarTareasViewController.m; sourceTree = "<group>"; };
+		A38B27071A425F6F00592ED5 /* Tarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tarea.h; sourceTree = "<group>"; };
+		A38B27081A425F6F00592ED5 /* Tarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tarea.m; sourceTree = "<group>"; };
+		A38B270B1A4261E600592ED5 /* CadaTareaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadaTareaTableViewCell.h; sourceTree = "<group>"; };
+		A38B270C1A4261E600592ED5 /* CadaTareaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CadaTareaTableViewCell.m; sourceTree = "<group>"; };
+		A38B270E1A426EB100592ED5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A38B27561A43AA7500592ED5 /* eliminar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eliminar.png; path = "../../../Proyectos Grupo 2/eliminar.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A38B26D01A424E9500592ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38B270F1A426EB200592ED5 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38B26E91A424E9600592ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A38B26CA1A424E9500592ED5 = {
+			isa = PBXGroup;
+			children = (
+				A38B270E1A426EB100592ED5 /* libsqlite3.dylib */,
+				A38B26D51A424E9500592ED5 /* NotasApp */,
+				A38B26EF1A424E9600592ED5 /* NotasAppTests */,
+				A38B26D41A424E9500592ED5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A38B26D41A424E9500592ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A38B26D31A424E9500592ED5 /* NotasApp.app */,
+				A38B26EC1A424E9600592ED5 /* NotasAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A38B26D51A424E9500592ED5 /* NotasApp */ = {
+			isa = PBXGroup;
+			children = (
+				A38B270A1A4261B800592ED5 /* CeldaTarea */,
+				A38B27061A425F4C00592ED5 /* Modelo */,
+				A38B27021A425F2300592ED5 /* AddTask */,
+				A38B26FE1A425EF700592ED5 /* ListarTareas */,
+				A38B26DA1A424E9500592ED5 /* AppDelegate.h */,
+				A38B26DB1A424E9600592ED5 /* AppDelegate.m */,
+				A38B26DD1A424E9600592ED5 /* ViewController.h */,
+				A38B26DE1A424E9600592ED5 /* ViewController.m */,
+				A38B26E01A424E9600592ED5 /* Main.storyboard */,
+				A38B26E31A424E9600592ED5 /* Images.xcassets */,
+				A38B26E51A424E9600592ED5 /* LaunchScreen.xib */,
+				A38B26D61A424E9500592ED5 /* Supporting Files */,
+			);
+			path = NotasApp;
+			sourceTree = "<group>";
+		};
+		A38B26D61A424E9500592ED5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A38B27561A43AA7500592ED5 /* eliminar.png */,
+				A38B26FC1A424EE800592ED5 /* notas.sqlite */,
+				A38B26D71A424E9500592ED5 /* Info.plist */,
+				A38B26D81A424E9500592ED5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A38B26EF1A424E9600592ED5 /* NotasAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A38B26F21A424E9600592ED5 /* NotasAppTests.m */,
+				A38B26F01A424E9600592ED5 /* Supporting Files */,
+			);
+			path = NotasAppTests;
+			sourceTree = "<group>";
+		};
+		A38B26F01A424E9600592ED5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A38B26F11A424E9600592ED5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A38B26FE1A425EF700592ED5 /* ListarTareas */ = {
+			isa = PBXGroup;
+			children = (
+				A38B26FF1A425F1900592ED5 /* ListarTareasViewController.h */,
+				A38B27001A425F1900592ED5 /* ListarTareasViewController.m */,
+			);
+			name = ListarTareas;
+			sourceTree = "<group>";
+		};
+		A38B27021A425F2300592ED5 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				A38B27031A425F3300592ED5 /* AgregarTareasViewController.h */,
+				A38B27041A425F3300592ED5 /* AgregarTareasViewController.m */,
+			);
+			name = AddTask;
+			sourceTree = "<group>";
+		};
+		A38B27061A425F4C00592ED5 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				A38B27071A425F6F00592ED5 /* Tarea.h */,
+				A38B27081A425F6F00592ED5 /* Tarea.m */,
+			);
+			name = Modelo;
+			sourceTree = "<group>";
+		};
+		A38B270A1A4261B800592ED5 /* CeldaTarea */ = {
+			isa = PBXGroup;
+			children = (
+				A38B270B1A4261E600592ED5 /* CadaTareaTableViewCell.h */,
+				A38B270C1A4261E600592ED5 /* CadaTareaTableViewCell.m */,
+			);
+			name = CeldaTarea;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A38B26D21A424E9500592ED5 /* NotasApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38B26F61A424E9600592ED5 /* Build configuration list for PBXNativeTarget "NotasApp" */;
+			buildPhases = (
+				A38B26CF1A424E9500592ED5 /* Sources */,
+				A38B26D01A424E9500592ED5 /* Frameworks */,
+				A38B26D11A424E9500592ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotasApp;
+			productName = NotasApp;
+			productReference = A38B26D31A424E9500592ED5 /* NotasApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A38B26EB1A424E9600592ED5 /* NotasAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38B26F91A424E9600592ED5 /* Build configuration list for PBXNativeTarget "NotasAppTests" */;
+			buildPhases = (
+				A38B26E81A424E9600592ED5 /* Sources */,
+				A38B26E91A424E9600592ED5 /* Frameworks */,
+				A38B26EA1A424E9600592ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A38B26EE1A424E9600592ED5 /* PBXTargetDependency */,
+			);
+			name = NotasAppTests;
+			productName = NotasAppTests;
+			productReference = A38B26EC1A424E9600592ED5 /* NotasAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A38B26CB1A424E9500592ED5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = jhonatan;
+				TargetAttributes = {
+					A38B26D21A424E9500592ED5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A38B26EB1A424E9600592ED5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A38B26D21A424E9500592ED5;
+					};
+				};
+			};
+			buildConfigurationList = A38B26CE1A424E9500592ED5 /* Build configuration list for PBXProject "NotasApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A38B26CA1A424E9500592ED5;
+			productRefGroup = A38B26D41A424E9500592ED5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A38B26D21A424E9500592ED5 /* NotasApp */,
+				A38B26EB1A424E9600592ED5 /* NotasAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A38B26D11A424E9500592ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38B26E21A424E9600592ED5 /* Main.storyboard in Resources */,
+				A38B26FD1A424EE800592ED5 /* notas.sqlite in Resources */,
+				A38B26E71A424E9600592ED5 /* LaunchScreen.xib in Resources */,
+				A38B27571A43AA7500592ED5 /* eliminar.png in Resources */,
+				A38B26E41A424E9600592ED5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38B26EA1A424E9600592ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A38B26CF1A424E9500592ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38B26DF1A424E9600592ED5 /* ViewController.m in Sources */,
+				A38B27011A425F1900592ED5 /* ListarTareasViewController.m in Sources */,
+				A38B26DC1A424E9600592ED5 /* AppDelegate.m in Sources */,
+				A38B270D1A4261E600592ED5 /* CadaTareaTableViewCell.m in Sources */,
+				A38B27091A425F6F00592ED5 /* Tarea.m in Sources */,
+				A38B26D91A424E9500592ED5 /* main.m in Sources */,
+				A38B27051A425F3300592ED5 /* AgregarTareasViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38B26E81A424E9600592ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38B26F31A424E9600592ED5 /* NotasAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A38B26EE1A424E9600592ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A38B26D21A424E9500592ED5 /* NotasApp */;
+			targetProxy = A38B26ED1A424E9600592ED5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A38B26E01A424E9600592ED5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A38B26E11A424E9600592ED5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A38B26E51A424E9600592ED5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A38B26E61A424E9600592ED5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A38B26F41A424E9600592ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A38B26F51A424E9600592ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A38B26F71A424E9600592ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NotasApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A38B26F81A424E9600592ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NotasApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A38B26FA1A424E9600592ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotasAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotasApp.app/NotasApp";
+			};
+			name = Debug;
+		};
+		A38B26FB1A424E9600592ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotasAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotasApp.app/NotasApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A38B26CE1A424E9500592ED5 /* Build configuration list for PBXProject "NotasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38B26F41A424E9600592ED5 /* Debug */,
+				A38B26F51A424E9600592ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38B26F61A424E9600592ED5 /* Build configuration list for PBXNativeTarget "NotasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38B26F71A424E9600592ED5 /* Debug */,
+				A38B26F81A424E9600592ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38B26F91A424E9600592ED5 /* Build configuration list for PBXNativeTarget "NotasAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38B26FA1A424E9600592ED5 /* Debug */,
+				A38B26FB1A424E9600592ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A38B26CB1A424E9500592ED5 /* Project object */;
+}
